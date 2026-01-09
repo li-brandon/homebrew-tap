@@ -5,21 +5,21 @@
 class Lazyliner < Formula
   desc "A beautiful, keyboard-driven terminal TUI for Linear"
   homepage "https://github.com/li-brandon/lazyliner"
-  version "0.0.0"
+  version "0.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/li-brandon/lazyliner/releases/download/v0.0.0/lazyliner_0.0.0_darwin_amd64.tar.gz"
-      sha256 "d72872bb58389afbe1c12e1580ff5fd858a3a8f4e57530df3687893d90eb27a5"
+      url "https://github.com/li-brandon/lazyliner/releases/download/v0.0.1/lazyliner_0.0.1_darwin_amd64.tar.gz"
+      sha256 "d9ffe49529d67753583bd6fef3fab3aa1e25ce4226996e79ba30c09b59471d06"
 
       def install
         bin.install "lazyliner"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/li-brandon/lazyliner/releases/download/v0.0.0/lazyliner_0.0.0_darwin_arm64.tar.gz"
-      sha256 "28a071cd192a1d01cd295924f8b66ce98c96d8b310bed244826eb38d2212f648"
+      url "https://github.com/li-brandon/lazyliner/releases/download/v0.0.1/lazyliner_0.0.1_darwin_arm64.tar.gz"
+      sha256 "2ec1c47bbc31e0e5fd7fd925d614a5d0a0f5fbd42db573eadd70d94afeebc53c"
 
       def install
         bin.install "lazyliner"
@@ -29,15 +29,15 @@ class Lazyliner < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/li-brandon/lazyliner/releases/download/v0.0.0/lazyliner_0.0.0_linux_amd64.tar.gz"
-      sha256 "2afe38b21bc8bfb06cea1b312b21df3384ac2840562a34fe64e8ea4971c14915"
+      url "https://github.com/li-brandon/lazyliner/releases/download/v0.0.1/lazyliner_0.0.1_linux_amd64.tar.gz"
+      sha256 "d4303ad0c490bccfee273948345f6da68ce8257f9de8d874fb8ef9aeecd27bb5"
       def install
         bin.install "lazyliner"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/li-brandon/lazyliner/releases/download/v0.0.0/lazyliner_0.0.0_linux_arm64.tar.gz"
-      sha256 "10b3154c671e907aa26dd140e291b6d8c17e3c7b6fa048c94c06b9943acc6083"
+      url "https://github.com/li-brandon/lazyliner/releases/download/v0.0.1/lazyliner_0.0.1_linux_arm64.tar.gz"
+      sha256 "9ac5df323d6e9dbffa9b9337ca86c2771f3923cb9cb2b31d54e6696030905f71"
       def install
         bin.install "lazyliner"
       end
